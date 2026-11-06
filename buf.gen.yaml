@@ -1,0 +1,8 @@
+version: v1
+plugins:
+  - remote: buf.build/prost/plugins/prost:v0.4.0-1
+    out: src/pb
+    opt:
+      - compile_well_known_types
+      - extern_path=.sf.solana.type.v1=::substreams_solana::pb::sf::solana::r#type::v1
+
